@@ -33,32 +33,54 @@ The code has been tested with Python 2.7 only on Windows 7 64-bit OS.
 - Click the `new` button on the notebook.
 
     ##### scipy
+
     import scipy
-    print('scipy: %s' % scipy.__version__)
+    
+	print('scipy: %s' % scipy.__version__)
+
     ##### numpy
-    import numpy
-    print('numpy: %s' % numpy.__version__)
-    ##### matplotlib
-    import matplotlib
-    print('matplotlib: %s' % matplotlib.__version__)
-    ##### pandas
-    import pandas
-    print('pandas: %s' % pandas.__version__)
-    ##### statsmodels
-    import statsmodels
-    print('statsmodels: %s' % statsmodels.__version__)
-    ##### scikit-learn
-    import sklearn
-    print('sklearn: %s' % sklearn.__version__)
+    
+	import numpy
+    
+	print('numpy: %s' % numpy.__version__)
+    
+	##### matplotlib
+    
+	import matplotlib
+    
+	print('matplotlib: %s' % matplotlib.__version__)
+    
+	##### pandas
+    
+	import pandas
+    
+	print('pandas: %s' % pandas.__version__)
+    
+	##### statsmodels
+    
+	import statsmodels
+    
+	print('statsmodels: %s' % statsmodels.__version__)
+    
+	##### scikit-learn
+    
+	import sklearn
+    
+	print('sklearn: %s' % sklearn.__version__)
 
 You should see output like the following:
 
     scipy: 0.19.0
-    numpy: 1.12.1
-    matplotlib: 2.0.2
-    pandas: 0.20.1
-    statsmodels: 0.8.0
-    sklearn: 0.18.1
+    
+	numpy: 1.12.1
+    
+	matplotlib: 2.0.2
+    
+	pandas: 0.20.1
+    
+	statsmodels: 0.8.0
+    
+	sklearn: 0.18.1
 
 **Step 4**- Install Deep Learning Libraries
 
@@ -72,16 +94,20 @@ NOTE: While installing the deep learning libraries, if you encounter any error, 
 Confirm your deep learning environment is installed and working correctly by executing the following commands in the `ipython notebook`
 
     # theano
-    import theano
-    print('theano: %s' % theano.__version__)
+    
+	import theano
+    
+	print('theano: %s' % theano.__version__)
     
 You should see an output like;
 
-theano: 0.9.0.dev-c697eeab84e5b8a74908da654b66ec9eca4f1291
+	theano: 0.9.0.dev-c697eeab84e5b8a74908da654b66ec9eca4f1291
 
 	# keras
-    import keras
-    print('keras: %s' % keras.__version__)
+    
+	import keras
+    
+	print('keras: %s' % keras.__version__)
 
 Note: keras requires tensorflow which will work with python3. Will leave this as a future work. This work involves removing anaconda ipython 2.x and installing version 3.x by following Step 2.
 
