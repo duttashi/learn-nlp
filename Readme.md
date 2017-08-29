@@ -36,7 +36,7 @@ The code has been tested with Python 2.7 only on Windows 7 64-bit OS.
 
     import scipy
     
-	print('scipy: %s' % scipy.__version__)
+    print('scipy: %s' % scipy.__version__)
 
     ##### numpy
     
@@ -89,7 +89,6 @@ In this step, we will install Python libraries used for deep learning, specifica
 NOTE: While installing the deep learning libraries, if you encounter any error, check out the `Issues` tab or else search for possible answers on `www.stackoverflow.com` website.
 
 - Install the Theano deep learning library by typing: `conda install theano`
-- Install Keras by typing: `pip install keras`
 
 Confirm your deep learning environment is installed and working correctly by executing the following commands in the `ipython notebook`
 
@@ -103,13 +102,26 @@ You should see an output like;
 
 	theano: 0.9.0.dev-c697eeab84e5b8a74908da654b66ec9eca4f1291
 
-	# keras
-    
+- Install Keras by typing: `pip install keras`
+
 	import keras
     
 	print('keras: %s' % keras.__version__)
+	
+	Using TensorFlow backend.
+	keras: 2.0.8
 
-Note: keras requires tensorflow which will work with python3. Will leave this as a future work. This work involves removing anaconda ipython 2.x and installing version 3.x by following Step 2.
+- Install Tensorflow by typing: `activate tensorflow`, your prompt should change. You should see something like, `(tensorflow)C:>`. 
+- To install the CPU-only version of TensorFlow, enter the following command: `(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow`
+- To install the GPU version of TensorFlow, enter the following command (on a single line): `(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow-gpu`
+- Validate the installation by launching the IPython Notebook. In the notebook type the command, 
+
+	import tensorflow as tf 
+	hello = tf.constant('Hello, TensorFlow!')
+	sess = tf.Session()
+	print(sess.run(hello))
+
+If the system outputs the following, `'Hello, TensorFlow!'` then you are ready to begin writing TensorFlow programs:
 
 ### Summary
 
