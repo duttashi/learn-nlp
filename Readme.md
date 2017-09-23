@@ -20,7 +20,7 @@ The code has been tested with Python 2.7 only on Windows 7 64-bit OS.
      
 - In PowerShell type the command `cd c:\users\yourusername\desktop` (*ensure to subsitute yourusername*) and press the enter key on the keyboard.
 
-- Now type the command `git clone https://github.com/duttashi/learn-nlp`
+- Now type the command `git clone https://github.com/duttashi/learnlp`
     
 **Step 2**- Install Anaconda and iPython Notebook
 
